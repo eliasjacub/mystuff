@@ -4,7 +4,7 @@ $count=0
 $labels ='data1','data2'
 
 foreach ($disk in $disks){
- $driveletter = $letter[$count].ToSingle()
+ $driveletter = $letter[$count].ToString()
  $disk | 
  Initialize-Disk -PartitionStyle MBR -PassThru |
 
